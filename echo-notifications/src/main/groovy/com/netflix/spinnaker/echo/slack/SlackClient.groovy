@@ -36,6 +36,8 @@ interface SlackClient {
     @Field('attachments') String attachments,
     @Field('channel') String channel,
     @Field('as_user') boolean asUser,
+    @Field('thread_ts') String threadTs,
+    @Field('reply_broadcast') boolean replyBroadcast,
     @Field('link_names') Integer linkUserNames)
 
   /**
